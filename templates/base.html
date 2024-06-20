@@ -1,14 +1,18 @@
+<!-- CREATING A BASE HTML PAGE WHICH WILL BE COMMON FOR ALL THE OTHER COMPONENTS -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>prashu</title>
+    <title>My project</title>
 </head>
-<body bgcolor="cyan">
-    {%block content %}
+<body bgcolor="pink">
 
-    {%endblock%}
+    <!-- RENDERING THE CODE FROM HOME.HTML TO BASE.HMTL BY DTL -->
+    {% block content %}
+ 
+    {% endblock %}
 </body>
 </html>
