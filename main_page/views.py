@@ -15,16 +15,19 @@ def index(request):
     dest1.desc = "The power plant city"
     dest1.img = 'destination_1.jpg'
     dest1.price = 700
+    dest1.offer = True
 
     dest2.name = "Kota"
     dest2.desc = "The study city"
     dest2.img = 'destination_2.jpg'
     dest2.price = 800
+    dest2.offer = False;
 
     dest3.name = "Chittor"
     dest3.desc = "The fort city"
     dest3.img= 'destination_3.jpg'
     dest3.price = 900
+    dest3.offer = False
 
     dests = [dest1, dest2, dest3]
 

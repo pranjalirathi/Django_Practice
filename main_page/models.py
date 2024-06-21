@@ -4,9 +4,10 @@ from django.db import models
 
 # defining a class structure here and the object will be instanced in the views.py
 class Destination: 
-    id: int
+    id : int
     name: str
-    img : str
     desc: str
+    img: str
     price: int
+    offer : bool
 
