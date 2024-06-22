@@ -3,11 +3,12 @@ from django.db import models
 # Create your models here.
 
 # defining a class structure here and the object will be instanced in the views.py
-class Destination: 
-    id : int
-    name: str
-    desc: str
-    img: str
-    price: int
-    offer : bool
+
+class Destination(models.Model): 
+
+    name = models.CharField(max_length = 100)
+    img = models.ImageField(upload_to='pics')
+    desc = models.TextField()
+    price = models.IntegerField
+    offer = models.BooleanField(default = False)
 

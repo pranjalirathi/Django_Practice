@@ -32,7 +32,9 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+# added main_page.apps.MainPgeConfig from apps.py
 INSTALLED_APPS = [
+    'main_page.apps.MainPageConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -77,8 +79,11 @@ WSGI_APPLICATION = 'django1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Django_01',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost' 
     }
 }
 
