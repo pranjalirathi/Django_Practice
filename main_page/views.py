@@ -6,29 +6,34 @@ from .models import Destination
 def index(request):
     
     #creating the object 
-    dest1 = Destination();
-    dest2 = Destination();
-    dest3 = Destination();
+    # dest1 = Destination();
+    # dest2 = Destination();
+    # dest3 = Destination();
 
-    #passing the values
-    dest1.name = "Rawatbhata"
-    dest1.desc = "The power plant city"
-    dest1.img = 'destination_1.jpg'
-    dest1.price = 700
-    dest1.offer = True
+    # #passing the values
+    # dest1.name = "Rawatbhata"
+    # dest1.desc = "The power plant city"
+    # dest1.img = 'destination_1.jpg'
+    # dest1.price = 700
+    # dest1.offer = True
 
-    dest2.name = "Kota"
-    dest2.desc = "The study city"
-    dest2.img = 'destination_2.jpg'
-    dest2.price = 800
-    dest2.offer = False;
+    # dest2.name = "Kota"
+    # dest2.desc = "The study city"
+    # dest2.img = 'destination_2.jpg'
+    # dest2.price = 800
+    # dest2.offer = False;
 
-    dest3.name = "Chittor"
-    dest3.desc = "The fort city"
-    dest3.img= 'destination_3.jpg'
-    dest3.price = 900
-    dest3.offer = False
+    # dest3.name = "Chittor"
+    # dest3.desc = "The fort city"
+    # dest3.img= 'destination_3.jpg'
+    # dest3.price = 900
+    # dest3.offer = False
 
-    dests = [dest1, dest2, dest3]
+    # dests = [dest1, dest2, dest3]
+
+
+
+
+    dests = Destination.objects.all()
 
     return render(request, "index.html", {'dests': dests})
